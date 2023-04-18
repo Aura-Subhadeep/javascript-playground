@@ -8,8 +8,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>FIrebase | app</title>
 </head>
-<body>
+<body class="bg-gray-300">
+    <div class="items-center text-center py-20 px-36">
+        <div class="pb-6">
+        <input class="bg-gray-700 text-white px-20 py-2 rounded-full" type="text" id="input-field" placeholder="Type here">
+        <button class="px-6 py-2 rounded-full bg-white" id="add-button">cart</button>
+        </div>
+        <ul id="shopping-list" class="">
+            <li class="bg-white py-2"></li>
+        </ul>
+    </div> 
 
-    <script src="/res/index.js"></script>
+    <script src="./res/index.js" type="module"></script>
 </body>
 </html>
