@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+ul li {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-grow: 1;
+}
