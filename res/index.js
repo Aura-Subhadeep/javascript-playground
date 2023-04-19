@@ -18,11 +18,9 @@ const shoppingListEL = document.getElementById("shopping-list")
 
 // add an event listener to the add button
 addButtonEl.addEventListener("click", function(){
-    // get the input value
     let inputValue = inputFieldEl.value
     // check if the input value is empty
     if (inputValue.trim().length === 0) {
-        // do nothing or show an error message
     } else {
     // push the input value to the database
         push(shoppingListInDB, inputValue)
@@ -42,7 +40,6 @@ onValue(shoppingListInDB, function(snapshot) {
         clearShoppingListEl()
         // loop through the items array
         for (let i = 0; i < itemsArray.length; i++) {
-            // get the current item and its id and value
             let currentItem = itemsArray[i]
             let currentItemID = currentItem[0]
             let currentItemValue = currentItem[1]
@@ -79,8 +76,6 @@ function appendItemToShoppingListEl(item) {
     newEl.addEventListener("click", function() {
         // get the reference to the item location in the database
         let itemLocation = ref(database, `shoppingList/${itemID}`)
-        // log a message to the console
-        console.log(`${itemValue} has been removed from the database`)
         // remove the item from the database
         remove(itemLocation)
     })
