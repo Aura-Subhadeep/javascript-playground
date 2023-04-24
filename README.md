@@ -1,2 +1,2 @@
-# Firebase_app
- A simple app using firebase platform
+# Web firebase projects : 
+A repo that showcases different web projects that are powered by Firebase.
