@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato';
+    background-color: #dedfe2;
+}
+
+.bg-white {
+    background-color: #ffff;
+}
+
+.bg-teal {
+    background-color:#539D98;
+}
+
+.text-white {
+    color: white;
+    text-decoration: none;
+}
+
+.bg-gray {
+    background-color: #121826;
+}
+
+.text-gray-10 {
+    color: #555f70;
+}
+
+.bg-teal-100 {
+    background-color: #539D98;
+}
+
+.bg-gray-30 {
+    background-color: #dedfe2;
+}
+
+.weather-box .temperature sup{
+    position: absolute;
+    font-size: 20px;
+}

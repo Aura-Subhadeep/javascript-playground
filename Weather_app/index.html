@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/Weather_app/res/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="py-6"></div>
+    </header>
+    <main>
+        <div class="px-5">
+            <div class="bg-white rounded-lg">
+                <div class="text-center py-8 px-4 pl-9">
+                    <div class="flex justify-between items-center search-box gap-6">
+                        <input type="text" class="input-box capitalize bg-gray-30 text-gray-10 text-2xl py-3 px-5 w-full rounded-lg outline-none" placeholder="Enter your location">
+                        <div class="pr-5">
+                            <button class="bg-gray-30 rounded-full px-3.5 py-1" id="searchBtn">
+                                <img  class="h-12 opacity-75" src="/Firebase_app_codebase/assets/images/search-alt-svgrepo-com.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--home section-->
+                <div class="px-4 py-4" id="home-section">
+                    <div class="flex weather-body justify-center">
+                        <img class="h-80" src="/Weather_app/assets/cloudy.png" alt="Weather" id="weather-img">
+                    </div>
+                    <div class="weather-box text-center py-5 pb-5">
+                        <h2 class="relative font-bold text-6xl" id="temperature">0<sup>°C</sup></h2>
+                        <p class="font-bold capitalize text-3xl py-2" id="weather-description">Light rain</p>
+                    </div>
+                    <div class="weather-details flex justify-between text-center">
+                        <div class="humidity">
+                            <img class="h-12" src="/Weather_app/assets/humidity.png">
+                            <div class="text">
+                                <span class="" id="humidity">45%</span>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="wind-speed">
+                            <img class="h-12" src="/Weather_app/assets/storm.png">
+                            <div class="text">
+                                <span class="" id="wind-speed">12Km/H</span>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-48 flex justify-center hidden" id="error-img">
+                    <img src="/Weather_app/assets/error.png" class="w-48">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/Weather_app/res/script.js"></script>
+</body>
+</html>
