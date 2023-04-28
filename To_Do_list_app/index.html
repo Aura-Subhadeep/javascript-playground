@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/To_Do_list_app/res/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ToDo</title>
+</head>
+<body class="gray-main-100">
+    <!--Header section-->
+    <header>
+        <div>
+            <div class="flex justify-between items-center mx-auto px-6 py-3 pt-8">
+                <div>
+                    <img src="/To_Do_list_app/assets/images/space.svg" class="h-11">
+                </div>
+                <div class="flex">
+                    <img src="/To_Do_list_app/assets/images/search-alt-svgrepo-com.svg" class="h-8 px-2 pr-3">
+                    <img src="/To_Do_list_app/assets/images/bookmark-alt-svgrepo-com.svg" class="h-8 px-2 pr-3">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main section-->
+    <main>
+        <div class="px-4 py-4">
+            <div class="bg-main-white drop-shadow-md border-solid border-gray-200 border-2 rounded-3xl px-6 py-7">
+                <div>
+                    <div class="flex justify-between py-1">
+                        <div>
+                            <p class="text-gray-10 text-16px">Good Morning,<span class="text-black-10 text-16px font-bold"> Mr. Aura!</span></p>
+                        </div>
+                        <div class="gray-main-100 px-3 rounded-md border-solid border-gray-200 border-2">
+                            <p class="text-gray-10 text-16px">22 April 2023</p>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <h1 class="text-black-10 text-32px font-bold">You have 6</h1>
+                        <h1 class="text-gray-10 text-30px">following visits today</h1>
+                    </div>
+                    <div class="py-2">
+                        <div>
+                            <ul id="shopping-list" class="gray-main-100 rounded-lg py-3 px-5 text-20px">
+                                <div id="items">
+
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div>
+        <div>
+        <input class="bg-gray-700 text-white px-20 py-2 rounded-full" type="text" id="input-field" placeholder="Type here">
+        <button class="px-6 py-2 rounded-full bg-white" id="add-button">cart</button>
+        </div>
+    </div>
+
+    <script src="/To_Do_list_app/res/index.js" type="module"></script>
+</body>
+</html>
