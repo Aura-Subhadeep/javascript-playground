@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+    background-color: #1f2033;
+}
+
+.bg-gray-blue {
+    background-color: #161722;
+}
+
+
+.btn-gray-20 {
+    background-color: hsl(237, 14%, 26%);
+}
+
+.text-gray-10 {
+    color: hsl(234, 39%, 85%);;
+}
