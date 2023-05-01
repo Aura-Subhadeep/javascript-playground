@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator/res/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <main class="w-full h-screen justify-center flex items-center text-gray-10 outline-none">
+        <div id="Calculator" class="">
+            <div class="py-3">
+                <input type="text" class="btn-gray-20 py-2 px-4 rounded-lg outline-none text-end" id="input-box" placeholder="0">
+            </div>
+            <div class="flex justify-between py-2">
+                <button class="btn-gray-20 mr-1 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">AC</button>
+                <button class="btn-gray-20 mr-1 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">DEL</button>
+                <button class="btn-gray-20 mr-1 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">%</button>
+                <button class="btn-gray-20 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">/</button>
+            </div>
+            <div class="flex justify-between pb-2">
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">7</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">8</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">9</button>
+                <button class="btn-gray-20 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">*</button>
+            </div>
+            <div class="flex justify-between pb-2">
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">4</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">5</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">6</button>
+                <button class="btn-gray-20 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">-</button>
+            </div>
+            <div class="flex justify-between pb-2">
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">1</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">2</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">3</button>
+                <button class="btn-gray-20 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">+</button>
+            </div>
+            <div class="flex justify-between pb-2">
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">00</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">0</button>
+                <button class="btn-gray-20 mr-1 py-2 px-2 w-1/4 rounded-full border-gray-700 border-solid border-2">.</button>
+                <button class="btn-gray-20 text-amber-400 py-2 px-2 w-1/4 rounded-lg border-gray-700 border-solid border-2">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/Calculator/res/main.js"></script>
 </body>
 </html>
