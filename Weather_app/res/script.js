@@ -1,4 +1,4 @@
-// Get the search button element by its id
+// Get the element by its id
 const inputBox = document.getElementById('input-box');
 const searchBtn = document.getElementById('searchBtn');
 const weather_img = document.getElementById('weather-img');
@@ -61,9 +61,6 @@ async function checkWeather(city){
             weather_img.src = "/Weather_app/assets/wind.png";
             break;
     }
-
-    // Log the weather data to the console for debugging purposes
-    console.log(weather_data)
 }
 
 // Add a click event listener to the search button that calls the checkWeather function with the input box value as an argument
